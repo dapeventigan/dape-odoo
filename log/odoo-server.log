@@ -1,0 +1,624 @@
+2025-05-12 06:23:11,149 1665 INFO ? odoo: Odoo version 18.0-20250405 
+2025-05-12 06:23:11,149 1665 INFO ? odoo: Using configuration file at /opt/bitnami/odoo/conf/odoo.conf 
+2025-05-12 06:23:11,149 1665 INFO ? odoo: addons paths: ['/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons', '/bitnami/odoo/data/addons/18.0', '/bitnami/odoo/addons'] 
+2025-05-12 06:23:11,149 1665 INFO ? odoo: database: bn_odoo@127.0.0.1:5432 
+2025-05-12 06:23:11,625 1665 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-05-12 06:23:11,625 1665 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-05-12 06:23:12,260 1665 WARNING ? py.warnings: /opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/base.py:736: SyntaxWarning: invalid escape sequence '\-'
+  File "/opt/bitnami/odoo/bin/odoo", line 4, in <module>
+    __import__('pkg_resources').run_script('odoo==18.0.post20250405', 'odoo')
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 752, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 1739, in run_script
+    exec(code, namespace, namespace)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/EGG-INFO/scripts/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 182, in run
+    main(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1368, in start
+    load_server_wide_modules()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1267, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/__init__.py", line 5, in <module>
+    from . import models
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/__init__.py", line 12, in <module>
+    from . import res_partner
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/res_partner.py", line 12, in <module>
+    import vobject
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/__init__.py", line 79, in <module>
+    from .base import newFromBehavior, readOne, readComponents
+  File "/opt/bitnami/python/lib/python3.12/warnings.py", line 112, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/netsvc.py", line 345, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2025-05-12 06:23:12,262 1665 WARNING ? py.warnings: /opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/base.py:1219: SyntaxWarning: invalid escape sequence '\;'
+  File "/opt/bitnami/odoo/bin/odoo", line 4, in <module>
+    __import__('pkg_resources').run_script('odoo==18.0.post20250405', 'odoo')
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 752, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 1739, in run_script
+    exec(code, namespace, namespace)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/EGG-INFO/scripts/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 182, in run
+    main(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1368, in start
+    load_server_wide_modules()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1267, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/__init__.py", line 5, in <module>
+    from . import models
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/__init__.py", line 12, in <module>
+    from . import res_partner
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/res_partner.py", line 12, in <module>
+    import vobject
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/__init__.py", line 79, in <module>
+    from .base import newFromBehavior, readOne, readComponents
+  File "/opt/bitnami/python/lib/python3.12/warnings.py", line 112, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/netsvc.py", line 345, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2025-05-12 06:23:12,263 1665 WARNING ? py.warnings: /opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/base.py:1219: SyntaxWarning: invalid escape sequence '\,'
+  File "/opt/bitnami/odoo/bin/odoo", line 4, in <module>
+    __import__('pkg_resources').run_script('odoo==18.0.post20250405', 'odoo')
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 752, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 1739, in run_script
+    exec(code, namespace, namespace)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/EGG-INFO/scripts/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 182, in run
+    main(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1368, in start
+    load_server_wide_modules()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1267, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/__init__.py", line 5, in <module>
+    from . import models
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/__init__.py", line 12, in <module>
+    from . import res_partner
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/res_partner.py", line 12, in <module>
+    import vobject
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/__init__.py", line 79, in <module>
+    from .base import newFromBehavior, readOne, readComponents
+  File "/opt/bitnami/python/lib/python3.12/warnings.py", line 112, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/netsvc.py", line 345, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2025-05-12 06:23:12,293 1665 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069 
+2025-05-12 06:23:12,314 1665 INFO bitnami_odoo odoo.modules.loading: loading 1 modules... 
+2025-05-12 06:23:12,367 1665 INFO bitnami_odoo odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries (+0 extra) 
+2025-05-12 06:23:12,374 1665 INFO bitnami_odoo odoo.modules.loading: loading 12 modules... 
+2025-05-12 06:23:13,292 1665 INFO bitnami_odoo odoo.modules.loading: 12 modules loaded in 0.92s, 0 queries (+0 extra) 
+2025-05-12 06:23:13,327 1665 INFO bitnami_odoo odoo.modules.loading: Modules loaded. 
+2025-05-12 06:23:13,329 1665 INFO bitnami_odoo odoo.modules.registry: Registry loaded in 1.036s 
+2025-05-12 06:23:13,331 1665 INFO bitnami_odoo odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections  
+2025-05-12 06:23:13,336 1682 INFO bitnami_odoo odoo.service.server: Worker WorkerHTTP (1682) alive 
+2025-05-12 06:23:13,339 1683 INFO bitnami_odoo odoo.service.server: Worker WorkerHTTP (1683) alive 
+2025-05-12 06:23:13,347 1685 INFO bitnami_odoo odoo.service.server: Worker WorkerCron (1685) alive 
+2025-05-12 06:23:17,739 1684 INFO ? odoo: Odoo version 18.0-20250405 
+2025-05-12 06:23:17,739 1684 INFO ? odoo: Using configuration file at /opt/bitnami/odoo/conf/odoo.conf 
+2025-05-12 06:23:17,739 1684 INFO ? odoo: addons paths: ['/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons', '/bitnami/odoo/data/addons/18.0', '/bitnami/odoo/addons'] 
+2025-05-12 06:23:17,739 1684 INFO ? odoo: database: bn_odoo@127.0.0.1:5432 
+2025-05-12 06:23:18,369 1684 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-05-12 06:23:18,369 1684 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-05-12 06:23:19,794 1684 WARNING ? py.warnings: /opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/base.py:736: SyntaxWarning: invalid escape sequence '\-'
+  File "/opt/bitnami/odoo/bin/odoo", line 4, in <module>
+    __import__('pkg_resources').run_script('odoo==18.0.post20250405', 'odoo')
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 752, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 1739, in run_script
+    exec(code, namespace, namespace)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/EGG-INFO/scripts/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 182, in run
+    main(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1368, in start
+    load_server_wide_modules()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1267, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/__init__.py", line 5, in <module>
+    from . import models
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/__init__.py", line 12, in <module>
+    from . import res_partner
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/res_partner.py", line 12, in <module>
+    import vobject
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/__init__.py", line 79, in <module>
+    from .base import newFromBehavior, readOne, readComponents
+  File "/opt/bitnami/python/lib/python3.12/warnings.py", line 112, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/netsvc.py", line 345, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2025-05-12 06:23:19,797 1684 WARNING ? py.warnings: /opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/base.py:1219: SyntaxWarning: invalid escape sequence '\;'
+  File "/opt/bitnami/odoo/bin/odoo", line 4, in <module>
+    __import__('pkg_resources').run_script('odoo==18.0.post20250405', 'odoo')
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 752, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 1739, in run_script
+    exec(code, namespace, namespace)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/EGG-INFO/scripts/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 182, in run
+    main(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1368, in start
+    load_server_wide_modules()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1267, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/__init__.py", line 5, in <module>
+    from . import models
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/__init__.py", line 12, in <module>
+    from . import res_partner
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/res_partner.py", line 12, in <module>
+    import vobject
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/__init__.py", line 79, in <module>
+    from .base import newFromBehavior, readOne, readComponents
+  File "/opt/bitnami/python/lib/python3.12/warnings.py", line 112, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/netsvc.py", line 345, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2025-05-12 06:23:19,797 1684 WARNING ? py.warnings: /opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/base.py:1219: SyntaxWarning: invalid escape sequence '\,'
+  File "/opt/bitnami/odoo/bin/odoo", line 4, in <module>
+    __import__('pkg_resources').run_script('odoo==18.0.post20250405', 'odoo')
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 752, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/pkg_resources/__init__.py", line 1739, in run_script
+    exec(code, namespace, namespace)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/EGG-INFO/scripts/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 182, in run
+    main(args)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/cli/server.py", line 175, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1368, in start
+    load_server_wide_modules()
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/service/server.py", line 1267, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/__init__.py", line 5, in <module>
+    from . import models
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/__init__.py", line 12, in <module>
+    from . import res_partner
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/addons/web/models/res_partner.py", line 12, in <module>
+    import vobject
+  File "/opt/bitnami/odoo/venv/lib/python3.12/site-packages/vobject/__init__.py", line 79, in <module>
+    from .base import newFromBehavior, readOne, readComponents
+  File "/opt/bitnami/python/lib/python3.12/warnings.py", line 112, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "/opt/bitnami/odoo/lib/odoo-18.0.post20250405-py3.12.egg/odoo/netsvc.py", line 345, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2025-05-12 06:23:19,903 1684 INFO ? odoo.service.server: Evented Service (longpolling) running on 0.0.0.0:8072 
+2025-05-12 06:24:18,733 1685 INFO bitnami_odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-05-12 06:24:18,755 1685 INFO bitnami_odoo odoo.addons.base.models.ir_attachment: filestore gc 10 checked, 0 removed 
+2025-05-12 06:24:18,795 1685 INFO bitnami_odoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-05-12 06:24:18,801 1685 INFO bitnami_odoo odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-05-12 06:24:18,805 1685 INFO bitnami_odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-12 06:24:18,805 1685 INFO bitnami_odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-12 06:24:18,816 1685 INFO bitnami_odoo odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-05-12 06:24:18,825 1685 INFO bitnami_odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.092s 
+2025-05-12 06:24:18,829 1685 INFO bitnami_odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-05-12 06:24:18,833 1685 INFO bitnami_odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-05-12 06:24:18,841 1685 INFO bitnami_odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) starting 
+2025-05-12 06:24:18,845 1685 INFO bitnami_odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) done in 0.004s 
+2025-05-12 06:24:18,847 1685 INFO bitnami_odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) processed 0 records, 0 records remaining 
+2025-05-12 06:24:18,850 1685 INFO bitnami_odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) completed 
+2025-05-12 06:35:11,398 1682 INFO bitnami_odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-12 06:35:11,427 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:35:11] "GET / HTTP/1.1" 303 - 5 0.004 0.175
+2025-05-12 06:35:11,665 1683 INFO bitnami_odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-12 06:35:11,692 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:35:11] "GET /odoo HTTP/1.1" 303 - 4 0.004 0.041
+2025-05-12 06:35:12,183 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:35:12] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 55 0.017 0.257
+2025-05-12 06:35:13,215 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:35:13] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.791
+2025-05-12 06:35:13,567 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:35:13] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.001 0.258
+2025-05-12 06:35:14,458 1682 INFO bitnami_odoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/fcdb363/web.assets_frontend_minimal.min.js (id:14) 
+2025-05-12 06:35:14,461 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:35:14] "GET /web/assets/fcdb363/web.assets_frontend_minimal.min.js HTTP/1.1" 200 - 12 0.005 0.587
+2025-05-12 06:35:16,198 1683 INFO bitnami_odoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/1611f85/web.assets_frontend.min.css (id:15) 
+2025-05-12 06:35:16,202 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:35:16] "GET /web/assets/1611f85/web.assets_frontend.min.css HTTP/1.1" 200 - 24 0.029 2.859
+2025-05-12 06:35:17,747 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:35:17] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:35:18,195 1683 INFO bitnami_odoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/f525939/web.assets_frontend_lazy.min.js (id:16) 
+2025-05-12 06:35:18,198 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:35:18] "GET /web/assets/f525939/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 21 0.004 1.303
+2025-05-12 06:35:19,377 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:35:19] "GET /web/webclient/translations/1747031716533 HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-12 06:50:15,333 1683 INFO bitnami_odoo odoo.addons.base.models.res_users: Login successful for db:bitnami_odoo login:user@example.com from 120.29.91.2 
+2025-05-12 06:50:15,351 1683 INFO bitnami_odoo odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2025-05-12 06:50:15,351 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:15] "POST /web/login HTTP/1.1" 303 - 54 0.024 0.789
+2025-05-12 06:50:15,585 1682 INFO ? odoo.modules.registry: Invalidating caches after database signaling: ['default', 'templates.cached_values'] 
+2025-05-12 06:50:15,591 1682 INFO bitnami_odoo odoo.addons.base.models.res_device: User 2 inserts device log (QrqnGi__1Rt3wBqlXAKQ4nes4AUGRpQRr9EmZgcdiA) 
+2025-05-12 06:50:15,958 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:15] "GET /odoo HTTP/1.1" 200 - 80 0.028 0.360
+2025-05-12 06:50:18,478 1683 INFO bitnami_odoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/b091fc4/web.assets_web.min.css (id:17) 
+2025-05-12 06:50:18,510 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:18] "GET /web/assets/b091fc4/web.assets_web.min.css HTTP/1.1" 200 - 28 0.057 2.255
+2025-05-12 06:50:18,580 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:18] "GET /web/webclient/load_menus/386c0517246da19c35ab26781dd057c1386a12fc91006a46d6ea145a8f2bd50f HTTP/1.1" 200 - 23 0.029 0.023
+2025-05-12 06:50:18,587 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:18] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.000 0.004
+2025-05-12 06:50:19,112 1682 INFO bitnami_odoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/a7259ed/web.assets_web.min.js (id:18) 
+2025-05-12 06:50:19,135 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:19] "GET /web/assets/a7259ed/web.assets_web.min.js HTTP/1.1" 200 - 15 0.012 2.052
+2025-05-12 06:50:20,727 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:20] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-12 06:50:20,970 1683 INFO bitnami_odoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/bddc118/web.assets_web_print.min.css (id:19) 
+2025-05-12 06:50:20,971 1682 INFO bitnami_odoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/c20279e/bus.websocket_worker_assets.min.js (id:20) 
+2025-05-12 06:50:20,976 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:20] "GET /web/assets/bddc118/web.assets_web_print.min.css HTTP/1.1" 200 - 20 0.041 1.548
+2025-05-12 06:50:20,982 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:20] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 200 - 8 0.005 0.027
+2025-05-12 06:50:21,201 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:21] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:50:21,435 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:21] "POST /web/action/load HTTP/1.1" 200 - 10 0.008 0.011
+2025-05-12 06:50:21,672 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:21] "GET /web/image/res.partner/3/avatar_128?unique=1747003814000 HTTP/1.1" 200 - 15 0.009 0.014
+2025-05-12 06:50:21,856 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:21] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 8 0.009 0.009
+2025-05-12 06:50:21,864 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:21] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.005
+2025-05-12 06:50:21,903 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:21] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 59 0.028 0.042
+2025-05-12 06:50:22,359 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 6 0.007 0.010
+2025-05-12 06:50:22,392 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 52 0.031 0.020
+2025-05-12 06:50:22,646 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:50:22] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.281
+2025-05-12 06:50:22,975 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:22] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:22,979 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:22] "GET /pos_restaurant/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:22,981 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:22] "GET /crm/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:22,982 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:22] "GET /account/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:22,984 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:22] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,191 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,201 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /website/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,203 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /stock/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,208 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,209 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,417 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,419 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /hr/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,421 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,428 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,429 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /website_event/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,632 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,637 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,637 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /base/static/img/icons/sign.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:50:23,648 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,649 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,847 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,855 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /project/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,857 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,868 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /data_recycle/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:23,869 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:23] "GET /marketing_card/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,067 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,072 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,073 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,088 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,091 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/planning.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,283 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,291 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /mrp/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,292 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,309 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /contacts/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,310 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /mail/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-05-12 06:50:24,498 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,509 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,515 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/social.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,529 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,531 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /fleet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,713 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,726 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,732 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/appointment.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,750 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /survey/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,752 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,928 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /repair/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,943 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,951 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,969 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:24,970 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:24] "GET /project_todo/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:25,144 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:25] "GET /hr_skills/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:25,160 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:25] "GET /base/static/img/icons/voip.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:25,168 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:25] "GET /lunch/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:25,173 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:25] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:25,190 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:25] "GET /base/static/img/icons/sale_amazon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:50:25,191 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:50:25] "GET /hr_contract/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:51:12,515 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:51:12] "GET /odoo/apps HTTP/1.1" 303 - 1 0.001 0.002
+2025-05-12 06:51:12,801 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:51:12] "GET /web/login?redirect=/odoo/apps? HTTP/1.1" 200 - 14 0.006 0.033
+2025-05-12 06:51:13,059 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:51:13] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:51:13,566 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:51:13] "GET /web/assets/1611f85/web.assets_frontend.min.css HTTP/1.1" 200 - 4 0.001 0.008
+2025-05-12 06:51:13,566 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:51:13] "GET /web/assets/fcdb363/web.assets_frontend_minimal.min.js HTTP/1.1" 200 - 4 0.001 0.003
+2025-05-12 06:51:13,795 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:51:13] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-12 06:51:14,324 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:51:14] "GET /web/assets/f525939/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 4 0.001 0.003
+2025-05-12 06:51:16,755 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:51:16] "GET /web/webclient/translations/1747032676696 HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-12 06:51:17,129 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:51:17] "GET /web/static/img/spin.svg HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:00,325 1682 INFO bitnami_odoo odoo.addons.base.models.res_users: Login failed for db:bitnami_odoo login:user@example.com from 120.29.91.2 
+2025-05-12 06:52:00,328 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:00] "POST /web/login HTTP/1.1" 200 - 8 0.005 0.649
+2025-05-12 06:52:00,643 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:00] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.001 0.002
+2025-05-12 06:52:01,006 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:01] "GET /web/webclient/translations/1747032720938 HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-12 06:52:07,161 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:07] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 - 2 0.001 0.002
+2025-05-12 06:52:07,783 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:07] "GET /apple-touch-icon.png HTTP/1.1" 404 - 2 0.001 0.003
+2025-05-12 06:52:07,785 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:07] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:07,789 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:07] "GET /favicon.ico HTTP/1.1" 404 - 2 0.001 0.002
+2025-05-12 06:52:16,640 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:16] "GET /web/login HTTP/1.1" 200 - 27 0.009 0.046
+2025-05-12 06:52:16,902 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:16] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:17,525 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:17] "GET /web/assets/1611f85/web.assets_frontend.min.css HTTP/1.1" 200 - 4 0.002 0.004
+2025-05-12 06:52:17,526 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:17] "GET /web/assets/fcdb363/web.assets_frontend_minimal.min.js HTTP/1.1" 200 - 4 0.003 0.008
+2025-05-12 06:52:17,758 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:17] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-12 06:52:18,265 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:18] "GET /web/assets/f525939/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 4 0.001 0.003
+2025-05-12 06:52:19,307 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:19] "GET /web/webclient/translations/1747032739251 HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-12 06:52:27,609 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:27] "GET /web/static/img/spin.svg HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:37,519 1682 INFO bitnami_odoo odoo.addons.base.models.res_users: Login successful for db:bitnami_odoo login:user@example.com from 120.29.91.2 
+2025-05-12 06:52:37,523 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:37] "POST /web/login HTTP/1.1" 303 - 27 0.011 0.635
+2025-05-12 06:52:37,785 1683 INFO bitnami_odoo odoo.addons.base.models.res_device: User 2 inserts device log (MvY5wCMz0rYeDaQ9MMQb9s8y0P61rs84bw2oXK1MwT) 
+2025-05-12 06:52:37,821 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:37] "GET /odoo HTTP/1.1" 200 - 27 0.008 0.032
+2025-05-12 06:52:38,106 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:38] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.002 0.004
+2025-05-12 06:52:38,588 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:38] "GET /web/assets/b091fc4/web.assets_web.min.css HTTP/1.1" 200 - 3 0.002 0.004
+2025-05-12 06:52:38,594 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:38] "GET /web/assets/a7259ed/web.assets_web.min.js HTTP/1.1" 200 - 3 0.001 0.005
+2025-05-12 06:52:38,612 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:38] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.000 0.005
+2025-05-12 06:52:38,628 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:38] "GET /web/webclient/load_menus/386c0517246da19c35ab26781dd057c1386a12fc91006a46d6ea145a8f2bd50f HTTP/1.1" 200 - 7 0.009 0.007
+2025-05-12 06:52:39,559 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:39] "GET /web/assets/bddc118/web.assets_web_print.min.css HTTP/1.1" 200 - 3 0.004 0.004
+2025-05-12 06:52:40,648 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:40] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 200 - 4 0.004 0.007
+2025-05-12 06:52:40,656 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:40] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.004
+2025-05-12 06:52:40,659 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:40] "GET /web/image/res.partner/3/avatar_128?unique=1747003814000 HTTP/1.1" 200 - 7 0.008 0.012
+2025-05-12 06:52:40,926 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:40] "GET /odoo/offline HTTP/1.1" 200 - 6 0.002 0.010
+2025-05-12 06:52:41,112 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:41] "POST /web/action/load HTTP/1.1" 200 - 10 0.005 0.006
+2025-05-12 06:52:41,311 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:41] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 8 0.002 0.007
+2025-05-12 06:52:41,400 1684 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-12 06:52:41,409 1684 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-12 06:52:41,433 1684 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-12 06:52:41,452 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:41] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 52 0.061 0.043
+2025-05-12 06:52:41,694 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:41] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.005
+2025-05-12 06:52:41,754 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:41] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.015 0.050
+2025-05-12 06:52:41,765 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:52:41] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.038 0.024
+2025-05-12 06:52:42,041 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /base/static/img/avatar.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,096 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,095 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /pos_restaurant/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,099 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /crm/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,105 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /account/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,259 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,316 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /website/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,320 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /stock/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,325 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,326 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-05-12 06:52:42,483 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,537 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,540 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /project/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:52:42,547 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,549 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /mrp/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,551 1684 INFO ? odoo.modules.loading: 12 modules loaded in 1.12s, 0 queries (+0 extra) 
+2025-05-12 06:52:42,562 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,586 1684 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-12 06:52:42,588 1684 INFO ? odoo.modules.registry: Registry loaded in 1.229s 
+2025-05-12 06:52:42,589 1684 INFO bitnami_odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-12 06:52:42,702 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,761 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,763 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,766 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,768 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,783 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,924 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,983 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /hr/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,985 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /data_recycle/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,988 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:42,990 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:42] "GET /marketing_card/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,004 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/sign.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,161 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,168 1684 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-12 06:52:43,204 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,206 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,209 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/planning.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,210 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-05-12 06:52:43,224 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /website_event/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,383 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /mail/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,426 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /contacts/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,428 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,434 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/social.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,435 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,445 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,604 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /fleet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,651 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,652 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-05-12 06:52:43,655 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/appointment.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,657 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /survey/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,664 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,823 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /repair/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,872 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,873 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,876 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,878 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /project_todo/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:43,882 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:43] "GET /hr_skills/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:44,045 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:44] "GET /base/static/img/icons/voip.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:44,094 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:44] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:44,098 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:44] "GET /base/static/img/icons/sale_amazon.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:52:44,098 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:44] "GET /lunch/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:44,100 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:52:44] "GET /hr_contract/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:52:54,659 1684 INFO bitnami_odoo longpolling: 120.29.91.2 - - [2025-05-12 06:52:54] "GET /websocket?version=18.0-3 HTTP/1.1" 101 494 13.301541 
+2025-05-12 06:53:44,728 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:44] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.006
+2025-05-12 06:53:44,968 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:44] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 10 0.003 0.013
+2025-05-12 06:53:45,421 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:45] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 23 0.005 0.011
+2025-05-12 06:53:45,660 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:45] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-12 06:53:45,880 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:45] "POST /base_setup/data HTTP/1.1" 200 - 6 0.002 0.002
+2025-05-12 06:53:46,109 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:53:46] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:53:46,327 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:53:46] "GET /web/static/img/mobile_app_qrcode_android.svg HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:53:46,546 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:53:46] "GET /web/static/img/mobile_app_qrcode_ios.svg HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:53:58,008 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:58] "POST /web/dataset/call_kw/res.config.settings/web_save HTTP/1.1" 200 - 25 0.007 0.010
+2025-05-12 06:53:58,242 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:58] "POST /web/action/load HTTP/1.1" 200 - 12 0.003 0.008
+2025-05-12 06:53:58,675 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:58] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 53 0.019 0.191
+2025-05-12 06:53:59,342 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:59] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 15 0.004 0.010
+2025-05-12 06:53:59,561 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:53:59] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-12 06:54:00,649 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:00] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 31 0.009 0.020
+2025-05-12 06:54:00,898 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:54:00] "GET /web/static/img/placeholder.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:54:06,330 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:06] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 6 0.002 0.007
+2025-05-12 06:54:08,217 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:08] "GET /odoo/settings?debug=1 HTTP/1.1" 200 - 21 0.007 0.020
+2025-05-12 06:54:08,453 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:08] "GET /web/assets/b091fc4/web.assets_web.min.css HTTP/1.1" 200 - 3 0.001 0.004
+2025-05-12 06:54:09,064 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:09] "GET /web/assets/a7259ed/web.assets_web.min.js HTTP/1.1" 200 - 3 0.001 0.003
+2025-05-12 06:54:09,347 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:09] "GET /web/webclient/load_menus/291c97e6e4dd6fb964b660e1ee72c69dcf3e71f84a5db8498fecefd9ea0714d6 HTTP/1.1" 200 - 49 0.009 0.022
+2025-05-12 06:54:09,351 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:09] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-12 06:54:09,355 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:09] "GET /web/assets/bddc118/web.assets_web_print.min.css HTTP/1.1" 200 - 3 0.001 0.002
+2025-05-12 06:54:10,696 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:10] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-12 06:54:10,921 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:10] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 200 - 3 0.001 0.005
+2025-05-12 06:54:10,925 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:10] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.004
+2025-05-12 06:54:10,962 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:10] "GET /web/image/res.partner/3/avatar_128?unique=1747003814000 HTTP/1.1" 200 - 7 0.011 0.009
+2025-05-12 06:54:11,139 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:54:11] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:54:11,142 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:54:11] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:54:11,200 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:11] "POST /web/action/load HTTP/1.1" 200 - 10 0.009 0.011
+2025-05-12 06:54:11,282 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:11] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 8 0.002 0.343
+2025-05-12 06:54:11,426 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:11] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 1 0.000 0.007
+2025-05-12 06:54:11,876 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:11] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 6 0.001 0.008
+2025-05-12 06:54:12,123 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:12] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-12 06:54:12,130 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:12] "POST /base_setup/data HTTP/1.1" 200 - 5 0.001 0.002
+2025-05-12 06:54:12,351 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:54:12] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:54:12,359 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:54:12] "GET /web/static/img/mobile_app_qrcode_android.svg HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:54:12,367 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:54:12] "GET /web/static/img/mobile_app_qrcode_ios.svg HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:54:17,700 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:17] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.007
+2025-05-12 06:54:17,936 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:17] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 21 0.004 0.009
+2025-05-12 06:54:21,035 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:21] "POST /web/action/load HTTP/1.1" 200 - 12 0.002 0.007
+2025-05-12 06:54:21,285 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:21] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 12 0.004 0.023
+2025-05-12 06:54:21,952 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:21] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 8 0.002 0.007
+2025-05-12 06:54:22,171 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:22] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.002
+2025-05-12 06:54:23,665 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:23] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 35 0.009 0.020
+2025-05-12 06:54:23,921 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:54:23] "GET /web/static/img/placeholder.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:54:27,027 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:27] "POST /web/action/load HTTP/1.1" 200 - 10 0.002 0.008
+2025-05-12 06:54:27,266 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:27] "POST /web/dataset/call_kw/change.password.wizard/get_views HTTP/1.1" 200 - 17 0.004 0.013
+2025-05-12 06:54:27,492 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:27] "POST /web/dataset/call_kw/change.password.wizard/onchange HTTP/1.1" 200 - 5 0.003 0.005
+2025-05-12 06:54:36,541 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:36] "POST /web/dataset/call_kw/change.password.wizard/web_save HTTP/1.1" 200 - 11 0.069 0.008
+2025-05-12 06:54:36,771 1683 INFO bitnami_odoo odoo.addons.base.models.res_users: Password change for 'user@example.com' (#2) by 'user@example.com' (#2) from 120.29.91.2 
+2025-05-12 06:54:37,398 1683 INFO bitnami_odoo odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2025-05-12 06:54:37,399 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:37] "POST /web/dataset/call_button/change.password.wizard/change_password_button HTTP/1.1" 200 - 26 0.010 0.628
+2025-05-12 06:54:37,624 1682 INFO ? odoo.modules.registry: Invalidating caches after database signaling: ['default', 'templates.cached_values'] 
+2025-05-12 06:54:37,629 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:37] "GET /odoo/users/2?debug=1 HTTP/1.1" 303 - 6 0.002 0.004
+2025-05-12 06:54:37,895 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:37] "GET /web/login?redirect=/odoo/users/2?debug%3D1 HTTP/1.1" 200 - 26 0.006 0.042
+2025-05-12 06:54:38,130 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:38] "GET /web/assets/1611f85/web.assets_frontend.min.css HTTP/1.1" 200 - 5 0.001 0.003
+2025-05-12 06:54:38,794 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:38] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.001 0.006
+2025-05-12 06:54:39,020 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:39] "GET /web/assets/fcdb363/web.assets_frontend_minimal.min.js HTTP/1.1" 200 - 4 0.001 0.004
+2025-05-12 06:54:39,251 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:54:39] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:54:39,252 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:39] "GET /web/assets/f525939/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 4 0.003 0.004
+2025-05-12 06:54:39,991 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:39] "GET /web/webclient/translations/1747032877138 HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-12 06:54:48,413 1683 INFO bitnami_odoo odoo.addons.base.models.res_users: Login successful for db:bitnami_odoo login:user@example.com from 120.29.91.2 
+2025-05-12 06:54:48,419 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:48] "POST /web/login HTTP/1.1" 303 - 35 0.009 0.648
+2025-05-12 06:54:48,640 1682 INFO bitnami_odoo odoo.addons.base.models.res_device: User 2 inserts device log (0V1-Od_pqoB-atITIpq_K_MWCFvmDcU-FAfdVjdKy9) 
+2025-05-12 06:54:48,691 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:48] "GET /odoo/users/2?debug=1 HTTP/1.1" 200 - 48 0.012 0.042
+2025-05-12 06:54:48,938 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:48] "GET /web/assets/a7259ed/web.assets_web.min.js HTTP/1.1" 200 - 3 0.001 0.004
+2025-05-12 06:54:49,843 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:49] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-12 06:54:49,868 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:49] "GET /web/webclient/load_menus/291c97e6e4dd6fb964b660e1ee72c69dcf3e71f84a5db8498fecefd9ea0714d6 HTTP/1.1" 200 - 49 0.046 0.023
+2025-05-12 06:54:50,540 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:50] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-12 06:54:50,763 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:50] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 200 - 3 0.002 0.003
+2025-05-12 06:54:50,768 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:50] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-12 06:54:50,794 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:50] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 8 0.003 0.006
+2025-05-12 06:54:51,002 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:51] "POST /web/action/load HTTP/1.1" 200 - 13 0.010 0.010
+2025-05-12 06:54:51,006 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:51] "GET /web/image/res.partner/3/avatar_128?unique=1747003814000 HTTP/1.1" 200 - 7 0.009 0.009
+2025-05-12 06:54:51,278 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:51] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 45 0.016 0.040
+2025-05-12 06:54:51,549 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:54:51] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 42 0.010 0.020
+2025-05-12 06:54:51,819 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:54:51] "GET /web/static/img/placeholder.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:03,379 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:03] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 38 0.011 0.025
+2025-05-12 06:55:06,620 1682 INFO bitnami_odoo odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2025-05-12 06:55:06,622 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:06] "POST /web/dataset/call_kw/res.users/web_save HTTP/1.1" 200 - 54 0.019 0.026
+2025-05-12 06:55:12,847 1683 INFO ? odoo.modules.registry: Invalidating caches after database signaling: ['default', 'templates.cached_values'] 
+2025-05-12 06:55:12,852 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:12] "GET /web/session/logout HTTP/1.1" 303 - 6 0.001 0.005
+2025-05-12 06:55:13,076 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:13] "GET /odoo HTTP/1.1" 303 - 4 0.001 0.004
+2025-05-12 06:55:13,340 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:13] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 23 0.008 0.037
+2025-05-12 06:55:13,587 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:13] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.001 0.002
+2025-05-12 06:55:13,830 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:13] "GET /web/webclient/translations/1747032910977 HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-12 06:55:20,980 1683 INFO bitnami_odoo odoo.addons.base.models.res_users: Login successful for db:bitnami_odoo login:dabeventigan@gmail.com from 120.29.91.2 
+2025-05-12 06:55:20,986 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:20] "POST /web/login HTTP/1.1" 303 - 34 0.008 0.644
+2025-05-12 06:55:21,207 1682 INFO bitnami_odoo odoo.addons.base.models.res_device: User 2 inserts device log (qct9wRU1sGZXvgFnEc-sLIovcEmJHzZ--6CEoXnI_Y) 
+2025-05-12 06:55:21,256 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:21] "GET /odoo HTTP/1.1" 200 - 45 0.011 0.041
+2025-05-12 06:55:21,519 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:21] "GET /web/webclient/load_menus/291c97e6e4dd6fb964b660e1ee72c69dcf3e71f84a5db8498fecefd9ea0714d6 HTTP/1.1" 200 - 18 0.006 0.016
+2025-05-12 06:55:21,954 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:21] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-12 06:55:22,173 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:22] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.001 0.002
+2025-05-12 06:55:22,401 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:22] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.005
+2025-05-12 06:55:22,402 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:22] "GET /bus/websocket_worker_bundle?v=18.0-3 HTTP/1.1" 200 - 3 0.003 0.005
+2025-05-12 06:55:22,650 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:22] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.007 0.022
+2025-05-12 06:55:22,876 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:22] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.006
+2025-05-12 06:55:23,092 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "GET /web/image/res.partner/3/avatar_128?unique=1747004106000 HTTP/1.1" 200 - 7 0.012 0.011
+2025-05-12 06:55:23,130 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 34 0.010 0.019
+2025-05-12 06:55:23,369 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.007
+2025-05-12 06:55:23,409 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 53 0.033 0.020
+2025-05-12 06:55:23,410 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.035
+2025-05-12 06:55:23,943 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:23,944 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "GET /pos_restaurant/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:55:23,946 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "GET /crm/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:23,947 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:23,949 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:23] "GET /account/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,158 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /website/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,161 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /stock/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,163 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,165 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,167 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:55:24,374 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,378 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /website_event/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,380 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,384 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,386 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /mrp/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,589 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,592 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,596 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /marketing_card/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,602 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /base/static/img/icons/planning.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,604 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,804 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /data_recycle/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,808 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,813 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,819 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /base/static/img/icons/sign.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:24,821 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:24] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,018 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /project/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,022 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,029 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /hr/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,037 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,039 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,233 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,237 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,246 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /mail/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,255 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,255 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /contacts/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:55:25,449 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,452 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/social.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,461 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,471 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /fleet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,473 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,666 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/appointment.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,667 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-05-12 06:55:25,683 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,684 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /survey/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-12 06:55:25,690 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,691 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /repair/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,882 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,892 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "POST /web/action/load HTTP/1.1" 200 - 9 0.004 0.008
+2025-05-12 06:55:25,901 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /project_todo/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,903 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,908 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /base/static/img/icons/voip.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:25,910 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:25] "GET /hr_skills/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:26,099 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:26] "GET /lunch/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:26,107 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:26] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:26,121 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:26] "GET /base/static/img/icons/sale_amazon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:26,126 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:26] "GET /hr_contract/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:26,139 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:26] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 13 0.005 0.017
+2025-05-12 06:55:26,588 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:26] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 22 0.003 0.011
+2025-05-12 06:55:26,828 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:26] "POST /base_setup/demo_active HTTP/1.1" 200 - 3 0.001 0.003
+2025-05-12 06:55:26,834 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:26] "POST /base_setup/data HTTP/1.1" 200 - 6 0.001 0.002
+2025-05-12 06:55:27,055 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:27] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:27,068 1682 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:27] "GET /web/static/img/mobile_app_qrcode_ios.svg HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-12 06:55:27,068 1683 INFO ? werkzeug: 120.29.91.2 - - [12/May/2025 06:55:27] "GET /web/static/img/mobile_app_qrcode_android.svg HTTP/1.1" 200 - 0 0.000 0.003
+2025-05-12 06:55:30,260 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:30] "POST /web/action/load HTTP/1.1" 200 - 12 0.003 0.008
+2025-05-12 06:55:30,537 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:30] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 43 0.011 0.042
+2025-05-12 06:55:31,213 1682 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:31] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 8 0.002 0.008
+2025-05-12 06:55:31,434 1683 INFO bitnami_odoo werkzeug: 120.29.91.2 - - [12/May/2025 06:55:31] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-12 07:23:05,974 1683 INFO bitnami_odoo werkzeug: 3.143.250.164 - - [12/May/2025 07:23:05] "GET / HTTP/1.1" 303 - 1 0.004 0.031
+2025-05-12 07:23:06,494 1682 INFO bitnami_odoo werkzeug: 3.143.250.164 - - [12/May/2025 07:23:06] "GET /odoo HTTP/1.1" 303 - 1 0.002 0.019
+2025-05-12 07:23:07,085 1683 INFO bitnami_odoo werkzeug: 3.143.250.164 - - [12/May/2025 07:23:07] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 3 0.006 0.005
+2025-05-12 07:27:45,087 1682 INFO bitnami_odoo werkzeug: 176.65.144.168 - - [12/May/2025 07:27:45] "POST /boaform/admin/formLogin HTTP/1.1" 404 - 2 0.008 0.002
+2025-05-12 07:37:46,508 1682 INFO bitnami_odoo werkzeug: 193.34.212.89 - - [12/May/2025 07:37:46] "GET / HTTP/1.1" 303 - 1 0.005 0.063
